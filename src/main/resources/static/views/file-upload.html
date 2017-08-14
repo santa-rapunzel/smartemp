@@ -1,0 +1,17 @@
+
+<form>
+    <div class="form-group">
+        <label name="upload">Upload document</label>
+        <input ngf-select
+               ng-model="vmUpload.file"
+               name="upload_input"
+               ngf-keep="'distinct'" ng-model="vmUpload.files"
+               ngf-accept="'*'"
+               ngf-max-size="'5MB'"
+               ngf-max-files="1">
+    </div>
+
+  <button type="button" class="btn btn-primary"
+          ng-click="vmUpload.upload()"
+          >Upload</button>
+</form>
