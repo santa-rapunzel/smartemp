@@ -9,9 +9,9 @@
                ngf-accept="'*'"
                ngf-max-size="'5MB'"
                ngf-max-files="1">
-    </div>
+               {{vmUpload.file[0].name}}
+    </div>    
 
   <button type="button" class="btn btn-primary"
-          ng-click="vmUpload.upload()"
-          >Upload</button>
+          ng-click="vmUpload.upload()">Upload</button>
 </form>
